@@ -1,2 +1,21 @@
-<h1>Bienvenue sur mon blog</h1>
-<p>La date actuelle est : {{ date }}</p>
+{% load static %}
+<!doctype html>
+<html lang="fr">
+<head>
+    <title>Django-cv</title>
+    <link rel="icon" href="{% static 'favicon.ico' %}">
+</head>
+<body>
+    </html><h1>Bienvenue sur mon blog</h1>
+    <p>La date actuelle est : {{ date }}</p>
+    <p>Bonjour {{ pseudo }}, nous sommes le {{ date }}.</p>
+    <p>Bonjour {{ TEXTE1|truncatewords:10 }}, nous sommes le {{ TEXTE2|pluralize:"al,aux" }}.</p>
+    <!--{# Supposons que notre vue a fourni un objet nommé article contenant les attributs titre, auteur et contenu #}
+    <h2>{{ article.titre }}</h2>
+    <p><em>Article publié par {{ article.auteur }}</em></p>
+    <p>{{ article.contenu }}</p>-->
+</body>
+
+
+
+

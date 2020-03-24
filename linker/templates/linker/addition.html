@@ -1,3 +1,17 @@
-<h1>Ma super calculatrice</h1>
-<p>{{ nombre1 }} + {{ nombre2 }}, ça fait <strong>{{ total }}</strong> !<br />
-Nous pouvons également calculer la somme dans le template : {{ nombre1|add:nombre2 }}.</p>
+{% load static %}
+<!doctype html>
+<html lang="fr">
+<head>
+    <title>Django-cv</title>
+    <link rel="icon" href="{% static 'favicon.ico' %}">
+</head>
+<body>
+    <h1>Ma super calculatrice</h1>
+    <p>{{ nombre1 }} + {{ nombre2 }}, ça fait <strong>{{ total }}</strong> !<br />
+    <p>Nous pouvons également calculer la somme dans le template : {{ nombre1|add:nombre2 }}.</p>
+</body>
+
+
+
+
+

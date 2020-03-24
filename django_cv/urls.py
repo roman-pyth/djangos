@@ -13,7 +13,7 @@ from django.urls import path
 from linker import views
 
 urlpatterns = [
-    #path('admin/', admin.site.urls), #to delete ? 
+    #path('admin/', admin.site.urls), #to delete ?
     path('', views.home), # home page
     path('date',views.date_actuelle),
     path('addition/<int:nombre1>/<int:nombre2>/',views.addition)
